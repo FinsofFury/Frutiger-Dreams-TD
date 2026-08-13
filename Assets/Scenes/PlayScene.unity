@@ -1060,7 +1060,6 @@ GameObject:
   - component: {fileID: 210511271}
   - component: {fileID: 210511274}
   - component: {fileID: 210511273}
-  - component: {fileID: 210511272}
   m_Layer: 0
   m_Name: WalkableGround (1)
   m_TagString: Untagged
@@ -1083,27 +1082,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &210511272
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210511270}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &210511273
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1420,7 +1398,6 @@ GameObject:
   - component: {fileID: 245970736}
   - component: {fileID: 245970739}
   - component: {fileID: 245970738}
-  - component: {fileID: 245970737}
   m_Layer: 0
   m_Name: WalkableGround (14)
   m_TagString: Untagged
@@ -1443,27 +1420,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &245970737
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245970735}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &245970738
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2785,7 +2741,6 @@ GameObject:
   - component: {fileID: 396795808}
   - component: {fileID: 396795811}
   - component: {fileID: 396795810}
-  - component: {fileID: 396795809}
   m_Layer: 0
   m_Name: WalkableGround (2)
   m_TagString: Untagged
@@ -2808,27 +2763,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &396795809
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 396795807}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &396795810
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3148,7 +3082,6 @@ GameObject:
   - component: {fileID: 421965895}
   - component: {fileID: 421965898}
   - component: {fileID: 421965897}
-  - component: {fileID: 421965896}
   m_Layer: 0
   m_Name: WalkableGround (3)
   m_TagString: Untagged
@@ -3171,27 +3104,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &421965896
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421965894}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &421965897
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3435,6 +3347,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4064895312920124919, guid: 3c60bb9374c000a4dbe84528cf6233c5, type: 3}
   m_PrefabInstance: {fileID: 448254066}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &451380759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 451380762}
+  - component: {fileID: 451380761}
+  - component: {fileID: 451380760}
+  m_Layer: 0
+  m_Name: EndPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &451380760
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451380759}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 12d6c2063a13a0b448cad97ba72114c9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &451380761
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451380759}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &451380762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451380759}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -59.25, y: 2.5, z: 4.25}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &461798700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3570,7 +3572,6 @@ GameObject:
   - component: {fileID: 492207092}
   - component: {fileID: 492207095}
   - component: {fileID: 492207094}
-  - component: {fileID: 492207093}
   m_Layer: 0
   m_Name: WalkableGround (8)
   m_TagString: Untagged
@@ -3593,27 +3594,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &492207093
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492207091}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &492207094
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4736,7 +4716,6 @@ GameObject:
   - component: {fileID: 664243104}
   - component: {fileID: 664243107}
   - component: {fileID: 664243106}
-  - component: {fileID: 664243105}
   m_Layer: 0
   m_Name: WalkableGround (13)
   m_TagString: Untagged
@@ -4759,27 +4738,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &664243105
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 664243103}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &664243106
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6239,7 +6197,6 @@ GameObject:
   - component: {fileID: 867336526}
   - component: {fileID: 867336529}
   - component: {fileID: 867336528}
-  - component: {fileID: 867336527}
   m_Layer: 0
   m_Name: WalkableGround (6)
   m_TagString: Untagged
@@ -6262,27 +6219,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &867336527
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 867336525}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &867336528
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7393,7 +7329,6 @@ GameObject:
   - component: {fileID: 1052370486}
   - component: {fileID: 1052370489}
   - component: {fileID: 1052370488}
-  - component: {fileID: 1052370487}
   m_Layer: 0
   m_Name: WalkableGround (4)
   m_TagString: Untagged
@@ -7416,27 +7351,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1052370487
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1052370485}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1052370488
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8373,7 +8287,6 @@ GameObject:
   - component: {fileID: 1179151628}
   - component: {fileID: 1179151631}
   - component: {fileID: 1179151630}
-  - component: {fileID: 1179151629}
   m_Layer: 0
   m_Name: WalkableGround (16)
   m_TagString: Untagged
@@ -8396,27 +8309,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1179151629
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179151627}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1179151630
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8609,7 +8501,6 @@ GameObject:
   - component: {fileID: 1222171360}
   - component: {fileID: 1222171363}
   - component: {fileID: 1222171362}
-  - component: {fileID: 1222171361}
   m_Layer: 0
   m_Name: WalkableGround (5)
   m_TagString: Untagged
@@ -8632,27 +8523,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &1222171361
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1222171359}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1222171362
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9268,6 +9138,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4064895312920124919, guid: 3c60bb9374c000a4dbe84528cf6233c5, type: 3}
   m_PrefabInstance: {fileID: 1295296267}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1312780256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1312780259}
+  - component: {fileID: 1312780258}
+  - component: {fileID: 1312780257}
+  m_Layer: 0
+  m_Name: StartPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1312780257
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312780256}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d28abb7724d1eaa409419cb4275fe638, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1312780258
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312780256}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1312780259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312780256}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.25, y: 2.5, z: 59.5}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1327781092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9961,7 +9921,6 @@ GameObject:
   - component: {fileID: 1446106596}
   - component: {fileID: 1446106599}
   - component: {fileID: 1446106598}
-  - component: {fileID: 1446106597}
   m_Layer: 0
   m_Name: WalkableGround (7)
   m_TagString: Untagged
@@ -9984,27 +9943,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &1446106597
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1446106595}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1446106598
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11003,7 +10941,6 @@ GameObject:
   - component: {fileID: 1621141697}
   - component: {fileID: 1621141700}
   - component: {fileID: 1621141699}
-  - component: {fileID: 1621141698}
   m_Layer: 0
   m_Name: WalkableGround (10)
   m_TagString: Untagged
@@ -11026,27 +10963,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1621141698
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1621141696}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1621141699
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11115,7 +11031,6 @@ GameObject:
   - component: {fileID: 1623244814}
   - component: {fileID: 1623244817}
   - component: {fileID: 1623244816}
-  - component: {fileID: 1623244815}
   m_Layer: 0
   m_Name: WalkableGround (12)
   m_TagString: Untagged
@@ -11138,27 +11053,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1623244815
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1623244813}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1623244816
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11785,7 +11679,6 @@ GameObject:
   - component: {fileID: 1701169452}
   - component: {fileID: 1701169455}
   - component: {fileID: 1701169454}
-  - component: {fileID: 1701169453}
   m_Layer: 0
   m_Name: WalkableGround (11)
   m_TagString: Untagged
@@ -11808,27 +11701,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &1701169453
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701169451}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1701169454
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12021,7 +11893,6 @@ GameObject:
   - component: {fileID: 1719646677}
   - component: {fileID: 1719646680}
   - component: {fileID: 1719646679}
-  - component: {fileID: 1719646678}
   m_Layer: 0
   m_Name: WalkableGround (18)
   m_TagString: Untagged
@@ -12044,27 +11915,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1719646678
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1719646676}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1719646679
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13993,7 +13843,6 @@ GameObject:
   - component: {fileID: 2049965547}
   - component: {fileID: 2049965550}
   - component: {fileID: 2049965549}
-  - component: {fileID: 2049965548}
   m_Layer: 0
   m_Name: WalkableGround (15)
   m_TagString: Untagged
@@ -14016,27 +13865,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2049965548
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049965546}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2049965549
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14229,7 +14057,6 @@ GameObject:
   - component: {fileID: 2070944825}
   - component: {fileID: 2070944828}
   - component: {fileID: 2070944827}
-  - component: {fileID: 2070944826}
   m_Layer: 0
   m_Name: WalkableGround (9)
   m_TagString: Untagged
@@ -14252,27 +14079,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &2070944826
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070944824}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2070944827
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14589,7 +14395,6 @@ GameObject:
   - component: {fileID: 2113266253}
   - component: {fileID: 2113266256}
   - component: {fileID: 2113266255}
-  - component: {fileID: 2113266254}
   m_Layer: 0
   m_Name: WalkableGround
   m_TagString: Untagged
@@ -14612,27 +14417,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2113266254
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113266252}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2113266255
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14763,7 +14547,6 @@ GameObject:
   - component: {fileID: 2122611757}
   - component: {fileID: 2122611760}
   - component: {fileID: 2122611759}
-  - component: {fileID: 2122611758}
   m_Layer: 0
   m_Name: WalkableGround (17)
   m_TagString: Untagged
@@ -14786,27 +14569,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 947948412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2122611758
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2122611756}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2122611759
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14935,3 +14697,5 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 721087412}
   - {fileID: 947948412}
+  - {fileID: 1312780259}
+  - {fileID: 451380762}
