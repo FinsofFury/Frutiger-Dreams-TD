@@ -72,8 +72,14 @@ public class Tower : MonoBehaviour
 
     void Shoot()
     {
-        // spawn projectile at firePoint position and rotation
-        Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+        GameObject bulletGO = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+
+        Projectile projectile = bulletGO.GetComponent<Projectile>();
+
+        if (projectile != null)
+        {
+            projectile.Seek(target);
+        }
     }
 
     // debug to see the tower range.
