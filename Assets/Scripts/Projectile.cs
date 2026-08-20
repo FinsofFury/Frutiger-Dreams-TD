@@ -1,3 +1,4 @@
+using System.Diagnostics.Contracts;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -6,6 +7,7 @@ public class Projectile : MonoBehaviour
 
     [Header("Attributes")]
     public float speed = 15f;
+    public int damage = 50;
     public void Seek(Transform _target)
     {
         target = _target;
@@ -37,8 +39,14 @@ public class Projectile : MonoBehaviour
 
     void HitTarget()
     {
-        // for now it destroys itself and the target. Will subtract health when I add that system in.
-        Destroy(target.gameObject);
+        // enemy now takes damage
+        Enemy enemy = target.GetComponent<Enemy>();
+
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
+
         Destroy(gameObject);
     }
 }

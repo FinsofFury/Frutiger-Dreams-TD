@@ -4,6 +4,7 @@ public class Enemy : MonoBehaviour
 {
     [Header("Enemy Stats")]
     public float speed = 5f;
+    public int health = 100;
 
     private Transform target;
     private int waypointIndex = 0;
@@ -14,6 +15,20 @@ public class Enemy : MonoBehaviour
         {
             target = Waypoints.wayPoints[0];
         }
+    }
+
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Destroy(gameObject);
     }
 
     void Update()
