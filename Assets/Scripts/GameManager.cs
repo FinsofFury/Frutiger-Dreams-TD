@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour
     // gameover flag
     public static bool GameIsOver = false;
 
+    [Header("UI Elements")]
+    public GameObject gameOverUI;
     void Start()
     {
         GameIsOver = false;
@@ -24,6 +26,8 @@ public class GameManager : MonoBehaviour
     {
         GameIsOver = true;
         Debug.Log("GAME OVER!");
+
+        gameOverUI.SetActive(true);
 
         // freeze all the things
         Time.timeScale = 0f; 

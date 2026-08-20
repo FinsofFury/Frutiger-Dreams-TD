@@ -71,6 +71,8 @@ public class Enemy : MonoBehaviour
 
     void EndPath()
     {
+        PlayerStats.Lives--;
+
         Destroy(gameObject);
     }
 }
