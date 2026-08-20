@@ -1,16 +1,25 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     [Header("Enemy Stats")]
     public float speed = 5f;
-    public int health = 100;
+    public float startHealth = 100f;
+    private float currentHealth;
+
+    [Header("Unity Stuff")]
+    public GameObject healthBarObject;
+    private Image healthBar;
 
     private Transform target;
     private int waypointIndex = 0;
 
     void Start()
     {
+        currentHealth = startHealth;
+
+        healthBar = healthBarObject.GetComponent<Image>();
+
         if (Waypoints.wayPoints.Length > 0)
         {
             target = Waypoints.wayPoints[0];
@@ -19,8 +28,11 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        health -= amount;
-        if (health <= 0)
+        currentHealth -= amount;
+
+        healthBar.fillAmount = currentHealth / startHealth;
+
+        if (currentHealth <= 0)
         {
             Die();
         }
