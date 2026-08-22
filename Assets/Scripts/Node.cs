@@ -20,6 +20,8 @@ public class Node : MonoBehaviour
 
     void OnMouseEnter()
     {
+        if (GameManager.GameIsOver) return;
+
         if (currentTower != null) return;
 
         rend.material.color = hoverColor;
@@ -27,11 +29,15 @@ public class Node : MonoBehaviour
 
     void OnMouseExit()
     {
+        if (GameManager.GameIsOver) return;
+
         rend.material.color = startColor;
     }
 
     void OnMouseDown()
     {
+        if (GameManager.GameIsOver) return;
+
         if (currentTower != null)
         {
             Debug.Log("Can't build there!");
