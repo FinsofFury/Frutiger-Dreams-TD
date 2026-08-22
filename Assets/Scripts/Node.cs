@@ -38,8 +38,17 @@ public class Node : MonoBehaviour
             return;
         }
 
+        if (PlayerStats.Money < BuildManager.instance.standardTowerCost)
+        {
+            Debug.Log("Not enough money to build that!");
+            return;
+        }
+        
+        PlayerStats.Money -= BuildManager.instance.standardTowerCost;
+
         GameObject towerToBuild = BuildManager.instance.GetTowerToBuild();
 
         currentTower = Instantiate(towerToBuild, transform.position + positionOffset, transform.rotation);
+        Debug.Log("Tower built! Money left: " + PlayerStats.Money);
     }
 }

@@ -13,7 +13,7 @@ public class BuildManager : MonoBehaviour
 
     [Header("Prefabs")]
     public GameObject standardTowerPrefab;
-
+    public int standardTowerCost = 100;
     public GameObject GetTowerToBuild()
     {
         return standardTowerPrefab;

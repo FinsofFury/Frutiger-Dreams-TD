@@ -5,7 +5,9 @@ public class Enemy : MonoBehaviour
     [Header("Enemy Stats")]
     public float speed = 5f;
     public float startHealth = 100f;
+    public int dropValue = 50;
     private float currentHealth;
+    
 
     [Header("Unity Stuff")]
     public GameObject healthBarObject;
@@ -34,6 +36,7 @@ public class Enemy : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            PlayerStats.Money += dropValue;
             Die();
         }
     }
