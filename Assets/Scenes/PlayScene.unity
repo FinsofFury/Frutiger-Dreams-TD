@@ -16080,6 +16080,10 @@ PrefabInstance:
       propertyPath: gameOverUI
       value: 
       objectReference: {fileID: 1871770812}
+    - target: {fileID: 2357258576747905591, guid: fb000c9da201a7d4181309e233df711a, type: 3}
+      propertyPath: startLives
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4957575574086697517, guid: fb000c9da201a7d4181309e233df711a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 101.71958
