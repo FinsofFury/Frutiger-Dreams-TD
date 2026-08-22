@@ -2,18 +2,32 @@ using UnityEngine;
 using System.Collections;
 public class EnemySpawner : MonoBehaviour
 {
-    [Header("Spawner Setup")]
-    public Transform enemyPrefab;
+    public static int EnemiesAlive = 0;
+
+    [Header("Wave Settings")]
+    public Wave[] waves; // create a wave list in inspector
     public Transform spawnPoint;
-
-    [Header("Wave Timing")]
     public float timeBetweenWaves = 5f;
+
     private float countdown = 2f;
-
     private int waveIndex = 0;
+    private bool isSpawning = false;
 
+    private void Start()
+    {
+        EnemiesAlive = 0;
+    }
     void Update()
     {
+        if (EnemiesAlive > 0)
+        {
+            return;
+        }
+
+        if (waveIndex == waves.Length) return;
+
+        if (isSpawning) return;
+
         if (countdown <= 0f)
         {
             StartCoroutine(SpawnWave());
@@ -25,18 +39,25 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
+        isSpawning = true;
+
+        Wave wave = waves[waveIndex];
+
+        for (int i = 0; i < wave.count; i++)
+        {
+            SpawnEnemy(wave.enemyPrefab);
+
+            yield return new WaitForSeconds(1f / wave.rate);
+        }
+
         waveIndex++;
 
-        for (int i = 0; i < waveIndex; i++)
-        {
-            SpawnEnemy();
-
-            yield return new WaitForSeconds(0.5f);
-        }
+        isSpawning = false;
     }
 
-    void SpawnEnemy()
+    void SpawnEnemy(GameObject enemy)
     {
-        Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
+        EnemiesAlive++;
     }
 }
