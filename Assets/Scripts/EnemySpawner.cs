@@ -39,6 +39,8 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator SpawnWave()
     {
+        PlayerStats.Rounds++;
+
         isSpawning = true;
 
         Wave wave = waves[waveIndex];
