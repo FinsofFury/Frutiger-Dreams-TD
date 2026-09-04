@@ -8,6 +8,10 @@ public class Projectile : MonoBehaviour
     [Header("Attributes")]
     public float speed = 15f;
     public int damage = 50;
+
+    [Header("Visuals")]
+    public Transform visualMesh; // child pebble mesh goes here.
+    public Vector3 spinSpeed = new Vector3(360f, 360f, 0f); // adjust to change the way the pebble rolls
     public void Seek(Transform _target)
     {
         target = _target;
@@ -35,6 +39,12 @@ public class Projectile : MonoBehaviour
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
 
         transform.LookAt(target);
+
+        // spinny
+        if (visualMesh != null)
+        {
+            visualMesh.Rotate(spinSpeed * Time.deltaTime, Space.Self);
+        }
     }
 
     void HitTarget()

@@ -10,7 +10,7 @@ public class Tower : MonoBehaviour
     [Header("Setup Fields")]
     public string enemyTag = "Enemy";
     public Transform partToRotate; // the part of the tower that rotates to face the enemy
-    public GameObject projectilePrefab;
+    public GameObject[] pebblePrefabs;
     public Transform firePoint; // bullet spawn point
 
     private Transform target;
@@ -72,13 +72,16 @@ public class Tower : MonoBehaviour
 
     void Shoot()
     {
-        GameObject bulletGO = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+        int randomIndex = Random.Range(0, pebblePrefabs.Length);
+        GameObject pebbleToFire = pebblePrefabs[randomIndex];
 
-        Projectile projectile = bulletGO.GetComponent<Projectile>();
+        GameObject bulletGO = Instantiate(pebbleToFire, firePoint.position, firePoint.rotation);
 
-        if (projectile != null)
+        Projectile projectileScript = bulletGO.GetComponent<Projectile>();
+
+        if (projectileScript != null)
         {
-            projectile.Seek(target);
+            projectileScript.Seek(target);
         }
     }
 

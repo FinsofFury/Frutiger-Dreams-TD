@@ -112,7 +112,10 @@ MonoBehaviour:
   fireRate: 1
   enemyTag: Enemy
   partToRotate: {fileID: 7153891628864180511}
-  projectilePrefab: {fileID: 8095969093071250137, guid: 6075654943cd9234e9c8f5112afb30ea, type: 3}
+  pebblePrefabs:
+  - {fileID: 6075086055675115643, guid: f36833ba0293daf4ea2f04bb76b691dd, type: 3}
+  - {fileID: 6279975011479429037, guid: fb032564b5b5b504e8bc932b1fa5aca4, type: 3}
+  - {fileID: 7261216492014844068, guid: 0be6296c8aa2e4340b926c22a44e8948, type: 3}
   firePoint: {fileID: 6870155526165312110}
 --- !u!1001 &1937568851134882770
 PrefabInstance:
