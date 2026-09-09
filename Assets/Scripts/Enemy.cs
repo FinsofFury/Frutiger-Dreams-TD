@@ -1,3 +1,4 @@
+using System.Net;
 using UnityEngine;
 using UnityEngine.UI;
 public class Enemy : MonoBehaviour
@@ -74,7 +75,11 @@ public class Enemy : MonoBehaviour
 
     void EndPath()
     {
-        PlayerStats.Lives--;
+        EndPoint mainBase = Object.FindAnyObjectByType<EndPoint>();
+        if (mainBase != null)
+        {
+            mainBase.TakeDamage();
+        }
 
         Destroy(gameObject);
     }

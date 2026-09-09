@@ -1,16 +1,32 @@
+using System.Collections;
 using UnityEngine;
 
 public class EndPoint : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [Header("Material Swap Settings")]
+    public MeshRenderer endpointRenderer;
+    public Material defaultMaterial;
+    public Material damageMaterial;
+    public float flashDuration = 0.2f;
+
+    public void TakeDamage()
     {
-        
+        PlayerStats.Lives--;
+
+        if (endpointRenderer != null)
+        {
+            StartCoroutine(FlashDamage());
+        }
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator FlashDamage()
     {
-        
+        endpointRenderer.material = damageMaterial;
+
+        yield return new WaitForSecondsRealtime(flashDuration);
+
+        endpointRenderer.material = defaultMaterial;
     }
+
 }
