@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: SniperTower
     second: {fileID: 2100000, guid: a316d778457028a46aaaa3daf27181ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SniperTowerGlass
+    second: {fileID: 2100000, guid: 25ff7ea6877c9504b8017d03d5983458, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
